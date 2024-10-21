@@ -1,4 +1,4 @@
-WORKDIR /app/app
+WORKDIR /app
 
 COPY requirements.txt ./
 
