@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-WORKDIR D:/desafio_verx/app
+WORKDIR /app
 
 COPY requirements.txt ./
 
