@@ -9,10 +9,6 @@ services:
       - 8000
     environment:
       - DATABASE_URL=postgresql://postgres:HBoTrLWGPkNMgpuVnkTSYcuUlRGKxgIZ@autorack.proxy.rlwy.net:55199/railway
-  #     #  DB_USER: postgres
-  #     #  DB_PWD:  alan2009
-  #     #-  DB_HOST: localhost
-  #     #-  DB_PORT: 5432
     depends_on:
      - db
   
@@ -21,10 +17,10 @@ services:
     container_name: database
     environment:      
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: HBoTrLWGPkNMgpuVnkTSYcuUlRGKxgIZ
+      POSTGRES_DB: railway
     ports:
-      - 5432
+      - 55199
     volumes:
       - db:/var/lib/postgresql/data
 volumes:
