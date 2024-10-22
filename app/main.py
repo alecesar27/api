@@ -1,4 +1,3 @@
-import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from app.services.produtor_service import ProdutorService
