@@ -49,14 +49,6 @@ class ProdutorService:
     def listar_produtores():
         return db.query(ProdutorRural).all()
 
-    # @staticmethod
-    # def obter_produtor(produtor_id):
-    #     produtor = ProdutorRural.query.get(produtor_id)
-    #     if not produtor:
-    #         raise ValueError("Produtor não encontrado.")
-    #     return produtor
-
-    # Endpoint para obter um produtor pelo ID
     @staticmethod
     def obter_produtor(produtor_id: int):
         produtor = db.query(ProdutorRural).filter(ProdutorRural.id == produtor_id).first()
